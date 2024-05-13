@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Large Text"
+            android:id="@+id/list_note_title"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/list_note_date"
+            android:layout_toEndOf="@+id/list_note_content_preview" />
+        <TextView
+            android:paddingLeft="100dp"
+            android:layout_gravity="center|end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Medium Text"
+            android:id="@+id/list_note_content_preview"
+            android:visibility="gone"/>
+
+        <TextView
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Medium Text"
+            android:id="@+id/list_note_date"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="italic"/>
+
+    </RelativeLayout>
+</LinearLayout>
